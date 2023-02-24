@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.imagen-1, .imagen-2, .imagen-3, .imagen-4, .imagen-5, .imagen-6 {
+    width: 300px;
+}
+.galeria {
+    background-color: plum;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
