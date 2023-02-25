@@ -1,0 +1,12 @@
+p::after {
+    content: 'Pasa por encima';
+}
+
+p:hover::after {
+    color: white;
+    content: '¡Hecho!';
+}
+
+button:hover {
+    background-color: green;
+}
