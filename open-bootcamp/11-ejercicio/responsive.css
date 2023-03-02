@@ -1,0 +1,41 @@
+/* Estilos para dispositivos con un ancho mayor a 640px */
+.contenedor {
+    display: flex;
+}
+
+.sidebar {
+    flex-basis: 25%;
+    background-color: #ccc;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.main {
+    flex-grow: 1;
+    background-color: #eee;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+/* Estilos para dispositivos con un ancho menor o igual a 640px */
+@media only screen and (max-width: 640px) {
+    .contenedor {
+    flex-direction: column-reverse;
+}
+
+.sidebar {
+    flex-basis: auto;
+    background-color: #ccc;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main {
+    flex-grow: 1;
+    background-color: #eee;
+}
+}
